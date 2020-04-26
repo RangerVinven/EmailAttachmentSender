@@ -23,7 +23,7 @@ for file in [doc for doc in os.listdir(directory)]:
     body = ""
     msg.attach(MIMEText(body, "plain"))
     try:
-        file = "directory"+file
+        file = directory+file
         attachment = open(file, "rb")
         part = MIMEBase("application", "octet-stream")
         part.set_payload(attachment.read())
