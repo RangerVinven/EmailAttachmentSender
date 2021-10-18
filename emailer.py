@@ -7,7 +7,7 @@ from email.mime.base import MIMEBase
 user = "" #Your Gmail
 password = "" #Your password
 recipient = "" #Recipient
-directory = "" #Directory with files eg "C:\Users\Daniel\Documents\folder\" (remember the \ at the end)
+directory = "" #Directory with files eg "C:\Users\<USER>\Documents\folder\" (remember the \ at the end)
 
 server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
